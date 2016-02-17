@@ -7,8 +7,11 @@ process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(10) )
 #)
 process.source = cms.Source(
     'PoolSource',
+#for 74X miniAOD data
   fileNames = cms.untracked.vstring('file:/cms/home/dygyun/MetPhi/CMSSW_7_4_15/src/Demo/MetAnalyzer/plugins/127E79F1-8A6F-E511-8ED2-0026189438ED.root')
-# fileNames = cms.untracked.vstring('file:/cms/home/dygyun/MET/CMSSW_7_6_3/src/MetTools/MetPhiCorrections/test/16779D78-3EB9-E511-96E2-0025903D0B7A.root')
+#for 76X miniAOD MC
+#fileNames = cms.untracked.vstring('root://xrootd.unl.edu//store/mc/RunIIFall15MiniAODv2/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/PU25nsData2015v1_HCALDebug_76X_mcRun2_asymptotic_v12-v1/00000/16779D78-3EB9-E511-96E2-0025903D0B7A.root')
+
 )
 process.TFileService = cms.Service("TFileService", fileName = cms.string("MetTree.root") ,
       closeFileFast = cms.untracked.bool(True))
