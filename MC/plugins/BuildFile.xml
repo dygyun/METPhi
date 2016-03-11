@@ -1,0 +1,30 @@
+<export>
+</export>
+<library   name="JetMETCorrectionsType1MET_plugins" file="*.cc">
+  <use   name="FWCore/Framework"/>
+  <use   name="FWCore/MessageLogger"/>
+  <use   name="FWCore/ParameterSet"/>
+  <use   name="FWCore/Utilities"/>
+  <use   name="CommonTools/Utils"/>
+  <use   name="DataFormats/Candidate"/>
+  <use   name="DataFormats/JetReco"/>
+  <use   name="DataFormats/METReco"/>
+  <use   name="DataFormats/MuonReco"/>
+  <use   name="DataFormats/ParticleFlowCandidate"/>
+  <use   name="DataFormats/PatCandidates"/>
+  <use   name="DataFormats/TauReco"/>
+  <use   name="DataFormats/VertexReco"/>
+  <use   name="JetMETCorrections/Objects"/>
+  <use   name="JetMETCorrections/Type1MET"/>
+  <use   name="CommonTools/UtilAlgos"/>
+
+<use name="FWCore/ServiceRegistry"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/Version"/>
+<use name="CondFormats/JetMETObjects"/>
+<use name="TrackingTools/TransientTrack"/>
+<use name="TrackingTools/Records"/>
+<use name="DataFormats/Common"/>
+
+
+</library>
